@@ -10,8 +10,8 @@ class MailGunException(Exception):
 
 
 class Mailgun:
-    MAILGUN_API_KEY = "9b0b3dce5e7f1c90f3daa3cb4b2c0a33-5645b1f9-bce05fda"
-    MAILGUN_DOMAIN = "sandboxb279dd91be33451f9d8d2840e44dbf83.mailgun.org"
+    MAILGUN_API_KEY = "65501758c933c6c5f818c4c3d34d3bc7-074fa10c-6b7b96e8"
+    MAILGUN_DOMAIN = "sandbox3002964ec6fd434a909bc6cde8d6608e.mailgun.org"
 
     FROM_TITLE = "PLANTLET REGISTRATION"
     FROM_EMAIL = f"do-not-reply@{MAILGUN_DOMAIN}"
