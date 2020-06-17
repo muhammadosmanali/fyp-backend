@@ -43,7 +43,7 @@ class UserModel(db.Model):
     def send_confirmation_email(self) -> Response:
         # configure e-mail contents
         subject = "Registration Confirmation"
-        link = "http://127.0.0.1:5000" + url_for(
+        link = request.url_root[0:-1] + url_for(
             "confirmation", confirmation_id=self.most_recent_confirmation.id
         )
         # string[:-1] means copying from start (inclusive) to the last index (exclusive), a more detailed link below:
