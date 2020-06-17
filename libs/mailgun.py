@@ -10,8 +10,8 @@ class MailGunException(Exception):
 
 
 class Mailgun:
-    MAILGUN_API_KEY = os.environ.get("MAILGUN_API_KEY", None)
-    MAILGUN_DOMAIN = os.environ.get("MAILGUN_DOMAIN", None)
+    MAILGUN_API_KEY = "9b0b3dce5e7f1c90f3daa3cb4b2c0a33-5645b1f9-bce05fda"
+    MAILGUN_DOMAIN = "sandboxb279dd91be33451f9d8d2840e44dbf83.mailgun.org"
 
     FROM_TITLE = "PLANTLET REGISTRATION"
     FROM_EMAIL = f"do-not-reply@{MAILGUN_DOMAIN}"
